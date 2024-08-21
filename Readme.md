@@ -77,6 +77,23 @@ systemctl enable jenkins
 ### Practical Summary
 1. How to install Jenkins Server
 2. Run your first job
+    - New item
+    - Build Step
 3. How to install plugins
+    - manage jenkins
+    - plugins
+    - available plugins
+    - search plugin and install
 4. Create master slave Jenkins
-
+    - instance launch (on node)
+    - java install (on node)
+    - manage jenkins
+    - node
+    - new node
+    - remote root dir /home/ubuntu
+    - labels node
+    - Launch Method - Launch via ssh - 
+        host - private IP
+        credential - add key (user and private key)
+        Host Key Verification Strategy - non
+    - Job configure (restric node (label - node))
