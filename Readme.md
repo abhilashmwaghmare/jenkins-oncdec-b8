@@ -33,6 +33,7 @@ Continuous Integration
 
 java - 
 
+pull - git clone
 syntax - java check syntax
 integrate - javac integrate
 compile - javac -o 
@@ -97,3 +98,43 @@ systemctl enable jenkins
         credential - add key (user and private key)
         Host Key Verification Strategy - non
     - Job configure (restric node (label - node))
+
+
+JOB - Github
+
+Pipeline - Plugin suit Multistage JOB
+Declarative and Scripted Pipeline
+
+
+### Practical Summary
+1. Parameterize job
+2. Pull code from Github
+    plugin: git
+    SCM: github url
+3. Pipeline
+    Plugin: pipeline, pipeline: Stage view
+    Create Pipeline Job
+    pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                 echo 'Hello World'
+            }
+        }
+        stage('Test') { 
+            steps {
+                 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                
+            }
+        }
+    }
+}
+
+
+
+
