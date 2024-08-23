@@ -136,5 +136,13 @@ Declarative and Scripted Pipeline
 }
 
 
+Pipeline: 
+----------
+
+Java based - Angular - maven 
 
 
+Pull - Git Clone repo
+Build (.war / .jar) - Syntax, integrate, compile, package 
+Test (Sonarqube) - test
+Deploy (tomcat / Java) - cp .war /tomcat/webapps/
