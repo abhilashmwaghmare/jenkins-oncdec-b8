@@ -146,3 +146,21 @@ Pull - Git Clone repo
 Build (.war / .jar) - Syntax, integrate, compile, package 
 Test (Sonarqube) - test
 Deploy (tomcat / Java) - cp .war /tomcat/webapps/
+
+
+Maven - Automate Build Tool
+
+syntax, integrate, compile, run, test, packaging
+
+Install maven
+Create project
+Studentapp(java, maven) - student.war
+
+Maven lifecycle
+----------------
+default ()
+clean
+site
+
+
+mvn clean package
