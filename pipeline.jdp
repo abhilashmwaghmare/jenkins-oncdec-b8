@@ -11,11 +11,17 @@ pipeline {
                 sh '/opt/maven/bin/mvn clean package'
             }
         }
-
         stage('Test') { 
             steps {
                 withSonarQubeEnv(installationName: 'sonar', credentialsId: 'sonar-cred') {
                     sh '/opt/maven/bin/mvn sonar:sonar'
+                }
+            }
+        }
+        stage('Quality-Gate') { 
+            steps {
+                timeout(10) {
+                    waitForQualityGate abortPipeline: true
                 }
             }
         }
