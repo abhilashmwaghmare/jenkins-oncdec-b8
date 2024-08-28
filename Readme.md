@@ -164,3 +164,17 @@ site
 
 
 mvn clean package
+
+---------------------
+Quality Analysis:
+
+Sonarqube 
+
+Vulnerability (Security Risk)
+Code Smell 
+Duplications
+Bugs 
+
+Java
+9000
+
