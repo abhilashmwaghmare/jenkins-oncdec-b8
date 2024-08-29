@@ -190,3 +190,35 @@ Docker image - ECR
 Kubernetes cluster - EKS
 
 Plugin: Deploy to container
+
+
+stage('Deploy') { 
+            steps {
+               sh '''docker build .
+                docker push ecr.io/image:latest'''
+            }
+        }
+stage('Deploy') { 
+            steps {
+               sh '''aws s3 cp targets/*.war bucket:/'''
+            }
+        }
+stage('Deploy') { 
+            steps {
+               sh '''docker build .
+                docker push ecr.io/image:latest
+                kubectl apply .
+                '''
+            }
+        }
+
+
+
+SED
+AWK
+
+
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+cp ./index.html /var/www/html/
