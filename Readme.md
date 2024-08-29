@@ -179,3 +179,14 @@ Java
 9000
 
  8d01d22907dd53f5d74e51ab4648ae4269524141
+
+-------
+
+Deploy
+------
+Server (TOMCAT)
+S3 - Versioning 
+Docker image - ECR
+Kubernetes cluster - EKS
+
+Plugin: Deploy to container
